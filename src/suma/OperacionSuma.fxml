@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="suma.OperacionSumaController">
+    <children>
+        <Button layoutX="87.0" layoutY="154.0" onAction="#metodoSumar" text="Enviar" />
+      <TextField fx:id="tfl_n3" layoutX="46.0" layoutY="81.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="tfl_n4" layoutX="121.0" layoutY="81.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="tfl_resultadoSuma" layoutX="207.0" layoutY="81.0" prefHeight="25.0" prefWidth="38.0" />
+      <Label layoutX="89.0" layoutY="70.0" text="+">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="172.0" layoutY="70.0" text="=">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label fx:id="label2" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="18.0" prefHeight="17.0" prefWidth="158.0" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="155.0" layoutY="154.0" mnemonicParsing="false" onAction="#metodoReini" text="Siguiente" />
+      <Button layoutX="245.0" layoutY="14.0" mnemonicParsing="false" text="Volver" />
+    </children>
+</AnchorPane>
