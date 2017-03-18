@@ -69,10 +69,8 @@ public class OperacionSumaController implements Initializable {
     private void metodoVolver(ActionEvent event){
         
         
-        
         ord.pantallaPrincipal();
-        
-        
+               
         
     }
    
