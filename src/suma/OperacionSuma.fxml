@@ -27,6 +27,6 @@
             <Font size="18.0" />
          </font></Label>
       <Button layoutX="155.0" layoutY="154.0" mnemonicParsing="false" onAction="#metodoReini" text="Siguiente" />
-      <Button layoutX="245.0" layoutY="14.0" mnemonicParsing="false" text="Volver" />
+      <Button layoutX="245.0" layoutY="14.0" mnemonicParsing="false" onAction="#metodoVolver" text="Volver" />
     </children>
 </AnchorPane>

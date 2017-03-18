@@ -21,6 +21,8 @@ import javafx.scene.control.TextField;
  * @author jean pierre
  */
 public class OperacionSumaController implements Initializable {
+    
+    private Ordenador ord;
 
     @FXML
     private TextField tfl_resultadoSuma, tfl_n3, tfl_n4;
@@ -68,7 +70,7 @@ public class OperacionSumaController implements Initializable {
         
         
         
-        
+        ord.pantallaPrincipal();
         
         
         
@@ -87,7 +89,11 @@ public class OperacionSumaController implements Initializable {
     } 
 
     
-    
+        
+    void setMainApp(Ordenador main) {
+        this.ord = main;
+    }
+
     
     
 }

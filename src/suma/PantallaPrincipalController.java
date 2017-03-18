@@ -25,7 +25,8 @@ public class PantallaPrincipalController implements Initializable {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/suma/OperacionSuma.fxml"));
         AnchorPane internalWindow = (AnchorPane) loader.load();
-        
+         OperacionSumaController controller = loader.getController();
+        controller.setMainApp(main);
         Scene scene = new Scene(internalWindow);
         main.primaryStage.setScene(scene);
         main.primaryStage.show();

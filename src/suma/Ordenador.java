@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 public class Ordenador extends Application {
     
     public Stage primaryStage;
+    public Scene scene; 
     private AnchorPane rootLayout;
     
     @Override
@@ -27,10 +28,16 @@ public class Ordenador extends Application {
         PantallaPrincipalController controller = loader.getController();
         controller.setMainApp(this);
         primaryStage = stage;
-        Scene scene = new Scene(rootLayout);
+        scene = new Scene(rootLayout);
 
         stage.setScene(scene);
         stage.show();
+    }
+    
+    
+    public void pantallaPrincipal(){
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     /**
